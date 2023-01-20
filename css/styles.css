@@ -1,0 +1,146 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    font-family: var(---fuente-primary)
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root{
+    ---background: ;
+    ---white: #fff;
+    ---fuente-primary: 'Poppins', sans-serif;
+}
+
+body{
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+body h1{
+    text-align: center;
+    font-family: var(---fuente-primary);
+    color: #efefef;
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+
+.container{
+    font-size: 1.5rem;
+    background-color: var(---white);
+    width: 70rem;
+    max-width: 80rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 56%;
+    left: 50%;
+    padding: 1rem;
+    box-shadow: inset 3px 2px 62px 14px rgba(51,51,51,0.44);
+    border-radius: .5rem;
+}
+
+#options-container{
+    text-align: center;
+    font-size: 2.3rem;
+}
+#options-container div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1.4rem 0 2.5rem 0;
+}
+#options-container button{
+    padding: 1rem 1.2rem;
+    border: 3px solid #000000;
+    background-color: var(---white);
+    color: #000000;
+    border-radius: .4rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+}
+
+#options-container button:disabled{
+    border: 3px solid #808080;
+    color: #808080;
+    background-color: #efefef;
+}
+
+#options-container button.active{
+    background-color: #079cfa;
+    border: 3px solid #000000;
+    color: #fff;
+    font-weight: bold;
+
+}
+.letter-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+}
+#letter-container button{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
+.new-game-popup{
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.6em;
+}
+#user-input-section{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: .8rem 0 1.8rem 0;
+}
+canvas{
+    display: block;
+    margin: auto;
+    border: 1px solid #000000;
+}
+.hide{
+    display: none;
+}
+#result-text h2{
+    font-size: 4rem;
+    text-align: center;
+}
+#result-text p{
+    font-size: 1.8rem;
+    margin: 1em 0 2em 0;
+}
+#result-text span{
+    font-weight: 600;
+}
+#new-game-button{
+    Font-Size: 2rem;
+    Padding: 1rem 2rem;
+    Background-Color: #079cfa;
+    Border: 3px Solid #000000;
+    Color: #fff;
+    font-weight: bold;
+    Border-Radius: 0.6rem;
+}
+.win-msg {
+    Color: #39d78d;
+  }
+.lose-msg {
+    Color: #Fe5152;
+}
